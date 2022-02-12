@@ -10,3 +10,15 @@
     entry: stylish-haskell --inplace
     language: system
     files: '\.l?hs$'
+-   id: hlint-docker
+    name: hlint-docker
+    description: HLint gives suggestions on how to improve your source code.
+    entry: ghcr.io/rileyev/haskell-pre-commit-hooks/hlint:latest
+    language: docker_image
+    files: '\.l?hs$'
+-   id: stylish-haskell-docker
+    name: stylish-haskell-docker
+    description: Haskell code prettifier.
+    entry: ghcr.io/rileyev/haskell-pre-commit-hooks/stylish-haskell:latest --inplace
+    language: docker_image
+    files: '\.l?hs$'
