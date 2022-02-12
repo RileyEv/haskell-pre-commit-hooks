@@ -13,12 +13,12 @@
 -   id: hlint-docker
     name: hlint-docker
     description: HLint gives suggestions on how to improve your source code.
-    entry: ghcr.io/rileyev/haskell-pre-commit-hooks/hlint:latest
+    entry: ghcr.io/rileyev/haskell-pre-commit-hooks/hlint:v0.3.0
     language: docker_image
     files: '\.l?hs$'
 -   id: stylish-haskell-docker
     name: stylish-haskell-docker
     description: Haskell code prettifier.
-    entry: ghcr.io/rileyev/haskell-pre-commit-hooks/stylish-haskell:latest --inplace
+    entry: ghcr.io/rileyev/haskell-pre-commit-hooks/stylish-haskell:v0.3.0 --inplace
     language: docker_image
     files: '\.l?hs$'
