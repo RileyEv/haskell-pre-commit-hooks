@@ -41,3 +41,4 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           target: ${{ env.VARIANT }}
+          platforms: linux/arm64/v8,linux/amd64
