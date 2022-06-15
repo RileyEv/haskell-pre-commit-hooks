@@ -115,4 +115,4 @@ jobs:
           docker pull ${{ env.DOCKER_IMAGE_BASE }}-arm64
 
           docker manifest create ${{ env.DOCKER_IMAGE_BASE }} ${{ env.DOCKER_IMAGE_BASE }}-amd64 ${{ env.DOCKER_IMAGE_BASE }}-arm64
-          docker push ${{ env.DOCKER_IMAGE_BASE }}
+          docker manifest push ${{ env.DOCKER_IMAGE_BASE }}
